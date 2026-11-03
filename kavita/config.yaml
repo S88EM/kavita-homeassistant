@@ -1,0 +1,24 @@
+name: "Kavita"
+slug: "kavita"
+version: "0.9.1.4"
+description: "Kavita — швидка, сучасна цифрова бібліотека та читалка для манґи, коміксів, книг та ранобе"
+url: "https://www.kavitareader.com"
+arch:
+  - aarch64
+  - amd64
+  - armv7
+startup: services
+boot: auto
+init: false
+webui: "http://[HOST]:[PORT:5000]"
+ports:
+  5000/tcp: 5000
+ports_description:
+  5000/tcp: "Веб-інтерфейс Kavita та OPDS сервер"
+map:
+  - share:rw
+  - media:rw
+options:
+  timezone: "UTC"
+schema:
+  timezone: str

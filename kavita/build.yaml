@@ -1,0 +1,4 @@
+build_from:
+  aarch64: "jvmilazz0/kavita:latest"
+  amd64: "jvmilazz0/kavita:latest"
+  armv7: "jvmilazz0/kavita:latest"
